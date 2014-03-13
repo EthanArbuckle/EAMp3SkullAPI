@@ -19,8 +19,8 @@ typedef enum {
 
 @protocol EAMP3SkullAPIDelegate <NSObject>
 
-- (void)recievedDataFromAPI:(NSArray *)data;
-- (void)failedToRecieveDataWithError:(NSError *)error;
+- (void)receivedDataFromAPI:(NSArray *)data;
+- (void)failedToReceiveDataWithError:(NSError *)error;
 
 @end
 

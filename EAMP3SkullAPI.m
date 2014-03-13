@@ -58,12 +58,12 @@
         }
         
         //send data to delegate
-        [_delegate recievedDataFromAPI:[container copy]];
+        [_delegate receivedDataFromAPI:[container copy]];
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         
        //send error message to delegate
-        [_delegate failedToRecieveDataWithError:error];
+        [_delegate failedToReceiveDataWithError:error];
         
     }];
     
@@ -117,12 +117,12 @@
         }
         
         //send data to delegate
-        [_delegate recievedDataFromAPI:[container copy]];
+        [_delegate receivedDataFromAPI:[container copy]];
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         
         //send error message to delegate
-        [_delegate failedToRecieveDataWithError:error];
+        [_delegate failedToReceiveDataWithError:error];
         
     }];
     
